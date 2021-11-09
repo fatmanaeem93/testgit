@@ -5,8 +5,8 @@
     <classes>
       <class name="artcourse.Courses">
         <methods>
-          <include name="getAllCourses"/>
           <include name="login"/>
+          <include name="postCource"/>
         </methods>
       </class> <!-- artcourse.Courses -->
     </classes>

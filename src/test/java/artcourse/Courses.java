@@ -75,7 +75,19 @@ public class Courses {
 	
 	@Test
 	public void postCource () {
-		baseURI = "http://localhost:3000";
-		given().put("/courses/1").then().statusCode(200);
+		org.json.JSONObject reqParams = new JSONObject();
+		reqParams.put("id","8");
+		reqParams.put("description","desc");
+		reqParams.put("auther","fatma");
+		baseURI = "http://localhost:3000/660";
+		RequestSpecification req =given();
+		req.header("content-type","application/json");
+		req.header("Authorization", "Bearer " + accessToken);
+		req.body(reqParams.toString());
+		Response res =req.post("/courses");
+		int statusCode =res.getStatusCode();
+		Assert.assertEquals(statusCode,201);
+	    String auther= res.jsonPath().get("auther");
+	    Assert.assertEquals(auther,"fatma");
 	}
 }
