@@ -70,6 +70,7 @@ public class Courses {
 		Response res =req.get("/courses/2");
 		int statusCode =res.getStatusCode();
 		Assert.assertEquals(statusCode,200);
+		System.out.println(res.body().prettyPrint());
 
 	}
 	
