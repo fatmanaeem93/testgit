@@ -6,7 +6,7 @@
       <class name="artcourse.Courses">
         <methods>
           <include name="login"/>
-          <include name="postCource"/>
+          <include name="editCource"/>
         </methods>
       </class> <!-- artcourse.Courses -->
     </classes>

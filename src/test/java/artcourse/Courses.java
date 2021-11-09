@@ -90,4 +90,22 @@ public class Courses {
 	    String auther= res.jsonPath().get("auther");
 	    Assert.assertEquals(auther,"fatma");
 	}
+	
+	@Test
+	public void editCource () {
+		org.json.JSONObject reqParams = new JSONObject();
+		reqParams.put("auther","jasmin");
+		baseURI = "http://localhost:3000/660";
+		RequestSpecification req =given();
+		req.header("content-type","application/json");
+		req.header("Authorization", "Bearer " + accessToken);
+		req.body(reqParams.toString());
+		Response res =req.patch("/courses/2");
+		int statusCode =res.getStatusCode();
+		Assert.assertEquals(statusCode,200);
+	    String auther= res.jsonPath().get("auther");
+	    Assert.assertEquals(auther,"jasmin");
+	}
+	
+	
 }
