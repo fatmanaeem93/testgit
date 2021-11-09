@@ -107,5 +107,19 @@ public class Courses {
 	    Assert.assertEquals(auther,"jasmin");
 	}
 	
+	@Test
+	public void deleteCource () {
+		org.json.JSONObject reqParams = new JSONObject();
+		baseURI = "http://localhost:3000/660";
+		RequestSpecification req =given();
+		req.header("content-type","application/json");
+		req.header("Authorization", "Bearer " + accessToken);
+		req.body(reqParams.toString());
+		Response res =req.delete("/courses/8");
+		int statusCode =res.getStatusCode();
+		Assert.assertEquals(statusCode,200);
+	}
+   	
+	
 	
 }
