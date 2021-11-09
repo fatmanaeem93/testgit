@@ -2,6 +2,7 @@ package artcourse;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -58,13 +59,18 @@ public class Courses {
 		int statusCode =res.getStatusCode();
 		Assert.assertEquals(statusCode,200);
 		System.out.println(res.body().prettyPrint());
-		
 	}
 	
 	@Test
 	public void getCourse () {
-		baseURI = "http://localhost:3000";
-		given().get("/courses/1").then().statusCode(200);
+		baseURI = "http://localhost:3000/660";
+		RequestSpecification req =given();
+		req.header("content-type","application/json");
+		req.header("Authorization", "Bearer " + accessToken);
+		Response res =req.get("/courses/2");
+		int statusCode =res.getStatusCode();
+		Assert.assertEquals(statusCode,200);
+
 	}
 	
 	@Test

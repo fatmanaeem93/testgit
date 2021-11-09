@@ -2,19 +2,19 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٤ EET" name="Default suite" finished-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٦ EET" duration-ms="1874">
+  <suite started-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٤ EET" name="Default suite" finished-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٦ EET" duration-ms="2106">
     <groups>
     </groups>
-    <test started-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٤ EET" name="Default test" finished-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٦ EET" duration-ms="1874">
+    <test started-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٤ EET" name="Default test" finished-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٦ EET" duration-ms="2106">
       <class name="artcourse.Courses">
-        <test-method is-config="true" signature="login()[pri:0, instance:artcourse.Courses@5403f35f]" started-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٤ EET" name="login" finished-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٦ EET" duration-ms="1797" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:artcourse.Courses@5403f35f]" started-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٤ EET" name="login" finished-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٦ EET" duration-ms="2028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="getAllCourses()[pri:0, instance:artcourse.Courses@5403f35f]" started-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٦ EET" name="getAllCourses" finished-at="٢٠٢١-١١-٠٩T١٤:٤٩:٥٦ EET" duration-ms="46" status="PASS">
+        <test-method signature="getCourse()[pri:0, instance:artcourse.Courses@5403f35f]" started-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٦ EET" name="getCourse" finished-at="٢٠٢١-١١-٠٩T١٥:٢٢:٢٦ EET" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllCourses -->
+        </test-method> <!-- getCourse -->
       </class> <!-- artcourse.Courses -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
